@@ -11,12 +11,14 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
+from __future__ import print_function
 
 try:
     import bluetooth
 except ImportError:
     from . import lightblueglue as bluetooth
 from nxt.brick import Brick
+
 
 class BlueSock(object):
 

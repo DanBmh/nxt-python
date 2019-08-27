@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 #Lists various information from all bricks it can connect to.
+from __future__ import print_function
 
 import sys, traceback
 

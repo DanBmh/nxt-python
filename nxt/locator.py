@@ -13,8 +13,15 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
+from __future__ import print_function
 
-import traceback, configparser, os
+import traceback, os
+
+try:
+    import configparser
+except ImportError:
+    # Module has different name in python 2
+    import ConfigParser as configparser
 
 class BrickNotFoundError(Exception):
     pass

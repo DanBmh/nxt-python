@@ -13,12 +13,14 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
+from __future__ import print_function
 
 import sys
 import nxt.locator
 from nxt.brick import FileWriter
 from nxt.error import FileNotFound
 from nxt.utils import parse_command_line_arguments
+
 
 def _write_file(b, fname, data):
     w = FileWriter(b, fname, len(data))

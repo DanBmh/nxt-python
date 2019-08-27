@@ -10,9 +10,11 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
+from __future__ import print_function
 
 import socket
 from nxt.brick import Brick
+
 
 class IpSock(object):
     def __init__(self, host, port):
